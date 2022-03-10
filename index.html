@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScriptUppgift</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <a href="#">Fixed navbar</a>
+        <button type="button"></button>
+        <div>
+            <ul>
+                <li>
+                    <a id="listAllBtn" href="#">List all</a>
+                </li>
+                <li>
+                    <a id="newBtn" href="#">New</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="listTable">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Hockeyplayer name</th>
+                    <th>Age</th>
+                    <th>Jersey number</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+
+    <div id="newPage">
+        <h1>New</h1>
+        <form>
+            <label for="newPlayer">Name</label>
+            <input id="newPlayer" type="text" placeholder="Enter name">
+
+            <label for="newAge">Age</label>
+            <input id="newAge" type="number" placeholder="Enter age">
+
+            <label for="newJerseyNumber">Jersey number</label>
+            <input id="newJerseyNumber" type="number" placeholder="Enter jersey number">
+
+            <label for="newCity">City</label>
+            <input id="newCity" type="text" placeholder="Enter city">
+
+            <button id="submitNewPlayerBtn" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="editPage">
+        <h1>Edit</h1>
+        <form>
+            <label for="editPlayer">Name</label>
+            <input id="editPlayer" type="text" placeholder="Edit name">
+
+            <label for="editAge">Age</label>
+            <input id="editAge" type="number" placeholder="Edit age">
+
+            <label for="editJerseyNumber">Jersey number</label>
+            <input id="editJerseyNumber" type="number" placeholder="Edit jersey number">
+
+            <label for="editCity">City</label>
+            <input id="editCity" type="text" placeholder="Edit city">
+
+            <button id="submitEditPlayerBtn" type="submit">Submit</button>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
